@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quran/my_bottom_navbar.dart';
-import 'package:quran/page2.dart';
-import 'package:quran/page_quran.random.dart';
+import 'package:quran/Pages/page2.dart';
+import 'package:quran/Bottom_quran.random.dart';
 import 'dart:ui' show ImageFilter;
 
 class HomePage extends StatefulWidget {

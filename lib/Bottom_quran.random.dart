@@ -19,11 +19,18 @@ class _PageQuranRandomState extends State<PageQuranRandom> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            const SizedBox(height: 200),
+            const SizedBox(height: 150),
+
             Text(AlQuran.getBismillah.ar,style: const TextStyle(fontSize: 40)),
+
             const SizedBox(height: 40),
-            Text(AlQuran.surahDetails.bySurahNumber(intValue).name,style: const TextStyle(fontSize: 35)),
-            Text('عدد الآيات ${AlQuran.surahDetails.bySurahNumber(intValue).ayahs.length.ar}',style: const TextStyle(fontSize: 35)),
+
+            Text(AlQuran.surahDetails.bySurahNumber(intValue).name , style: const TextStyle(fontSize: 35)),
+
+            Text('عدد الآيات ${AlQuran.surahDetails.bySurahNumber(intValue).ayahs.length.ar}' , style: const TextStyle(fontSize: 35)),
+
+            Text('رقم الآية ${AlQuran.surahDetails.bySurahNumber(intValue).number.ar}' , style: const TextStyle(fontSize: 35)),
+
             ElevatedButton(onPressed: () {
               setState(() {
                 intValue = Random().nextInt(113)+1;
